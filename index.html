@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Unicorn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #fce4ec;
+            color: #880e4f;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #d81b60;
+        }
+        .unicorn-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .cta {
+            background: #d81b60;
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background: #ad1457;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #d81b60;
+            border-radius: 5px;
+        }
+        button {
+            background: #d81b60;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ad1457;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Magical Unicorn Rentals</h1>
+        <p>Make your dreams come true by renting a real unicorn for your special event!</p>
+        <img src="unicorn.jpg" alt="Beautiful Unicorn" class="unicorn-img">
+        <br>
+        <a href="#contact" class="cta">Rent a Unicorn Now</a>
+
+        <form id="contact">
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
