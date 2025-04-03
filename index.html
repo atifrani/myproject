@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,20 @@
         .cta:hover {
             background: #ad1457;
         }
-        form {
+        nav {
+            background: #d81b60;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #ad1457;
+        }
+        .section {
             background: white;
             padding: 20px;
             border-radius: 10px;
@@ -63,20 +76,41 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#about">Qui sommes-nous?</a>
+        <a href="#services">Nos services</a>
+        <a href="#contact">Nous contacter</a>
+    </nav>
     <div class="container">
         <h1>Magical Unicorn Rentals</h1>
-        <p>Make your dreams come true by renting a real unicorn for your special event!</p>
-        <img src="unicorn.jpg" alt="Beautiful Unicorn" class="unicorn-img">
-        <br>
-        <a href="#contact" class="cta">Rent a Unicorn Now</a>
+        <p>Faites de vos rêves une réalité en louant une licorne pour votre événement spécial!</p>
+        <img src="unicorn.jpg" alt="Belle Licorne" class="unicorn-img">
 
-        <form id="contact">
-            <h2>Contact Us</h2>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div id="about" class="section">
+            <h2>Qui sommes-nous?</h2>
+            <p>Licornes Rent est une entreprise spécialisée dans la location de licornes pour divers événements. Nous mettons à votre disposition des créatures magiques pour enchanter vos moments spéciaux.</p>
+        </div>
+
+        <div id="services" class="section">
+            <h2>Nos services</h2>
+            <p>Nous proposons la location de licornes pour différents types d’événements :</p>
+            <ul>
+                <li><strong>Mariages :</strong> Ajoutez une touche féerique à votre cérémonie.</li>
+                <li><strong>Anniversaires :</strong> Offrez un moment magique à vos enfants et invités.</li>
+                <li><strong>Baptêmes :</strong> Rendez cet événement encore plus inoubliable.</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Nous contacter</h2>
+            <p>Contactez-nous pour plus d’informations ou pour réserver votre licorne !</p>
+            <form>
+                <input type="text" placeholder="Votre Nom" required>
+                <input type="email" placeholder="Votre Email" required>
+                <textarea placeholder="Votre Message" required></textarea>
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
